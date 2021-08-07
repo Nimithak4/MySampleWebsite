@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimitha K</title>
+    <link rel="icon" href="https://media-exp3.licdn.com/dms/image/C5603AQE3ZSJfFF6nMg/profile-displayphoto-shrink_200_200/0/1606995168281?e=1632355200&v=beta&t=Hc5ax6QPU4_qgF-_nO9qg_4huMEB88Qk-IdgCSKsNpw" type="image/icon type">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .img-gallery{
+          width:80%;
+          margin: 100px auto 50px;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          grid-gap: 30px;
+        }
+        .img-gallery img{
+          width:100%;
+          cursor: pointer;
+          float: left;
+        }
+        .img-gallery img:hover{
+          transform: scale(0.8) rotate(-15deg);
+          border-radius: 20px;
+          box-shadow: 0 32px 75px rgba(68,77,136,0.2);
+          
+        }
+        .full-img{
+          width: 100%;
+          height: 100vh;
+          background: rgba(0,0,0,0.9);
+          position: fixed;
+          top:0;
+          left: 0;
+          display: none;
+          align-items: center;
+          justify-content:center;
+          z-index: 100;
+        } 
+        .full-img img{
+          width: 90%;
+          max-width:500px;
+    
+        }
+        .full-img span{
+          position: absolute;
+          top: 5%;
+          right:5%;
+          font-size: 30px;
+          color: #fff;
+          cursor: pointer;
+    
+        }
+    
+      </style>
+</head>
+<body>
+<header class="bg-info" style="position: fixed; z-index: 1; width: 100%;">
+    <div class="row text-white" >
+        <div class="col-md-6 col-9 p-3 pl-5">
+            <h2>Nimitha K</h2>
+        </div>
+        <div class="col-md-6 col-3 my-auto">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav  ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link text-white" href="#home-section">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#skill-section">Likes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#experience-section">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#Gallery-section">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact-section">Contact me</a>
+                    </li>
+                    
+                    
+                  </ul>
+                  
+                </div>
+              </nav>
+        </div>
+
+    </div>
+</header>
+
+<section  id="home-section" style="padding-top: 7em;">
+    <div class="container ">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="image.jpeg" class="img-fluid rounded-circle" >
+            </div>
+            <div class="col-md-6">
+                <h4 class="pt-4">Tech Savant || B.Tech Graduate<br>
+                    Calicut, Kerala, India
+                </h4>
+                <blockquote>
+                <p>
+                    "Just be You.
+                    Even Uniqueness starts with yoU!"
+                </p>
+                <footer>-Nimitha</footer>
+                </blockquote>
+                
+            </div>
+        </div>
+    </div>
+    <br>
+</section>
+<section class="bg-light p-5" id="skill-section">
+    <div class="container">
+        <br>
+        <h1 class="text-center">Likes</h1>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center p-3" style="height: 18em;" >
+                    <i class="fas fa-motorcycle display-1 text-info"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Travel</h5>
+                      <p class="card-text">Travel takes us out of our comfort zones and inspires us to see, taste and try new things.</p>
+                      
+                    </div>
+                </div>
+            
+            
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center p-3" style="height: 18em;" >
+                    <i class="fas fa-music display-1 text-info"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Music</h5>
+                      <p class="card-text">Music can name the unnameable and communicate the unknowable..</p>
+                      
+                    </div>
+                </div>
+            
+            
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center p-3" style="height: 18em;" >
+                    <i class="fas fa-hand-peace display-1 text-info"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Dancing</h5>
+                      <p class="card-text">When you dance, you can enjoy the luxury of being you..</p>
+                      
+                    </div>
+                </div>
+            
+        
+            </div>
+        </div>
+        <div class="row pt-3">
+        
+            <div class="col-md-4">
+                <div class="card text-center p-3"style="height: 18em;" >
+                    <i class="fas fa-running display-1 text-info"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Acting</h5>
+                      <p class="card-text">it is a way to explore life and human emotion..</p>
+                      
+                    </div>
+                </div>
+            
+            
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center p-3" style="height: 18em;">
+                    <i class="fas fa-tshirt display-1 text-info"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Fashion Designing</h5>
+                      <p class="card-text"> can create new and imaginative designs, and experiment with unique ideas in his or her workplace.</p>
+                      
+                    </div>
+                </div>
+            
+            
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center p-3" style="height: 18em;" >
+                    <i class="fas fa-female display-1 text-info"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Styling</h5>
+                      <p class="card-text">Style is a reflection of your attitude and your personality..</p>
+                      
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+<section class="bg-secondary p-5" id="experience-section">
+    <br>
+    <div class="container">
+        <h1 class="text-center">Experiences</h1>
+        <div class="row ml-5">
+            <div class="col-md-6 ">
+                <a href="https://www.royaldrive.in/" style="text-decoration: none;">
+                <div class="card text-center p-3" style="width: 75%;">
+                    <img src="https://media-exp3.licdn.com/dms/image/C510BAQFXao52ZRExeg/company-logo_200_200/0/1558348177492?e=1634774400&v=beta&t=C-TTEyeQ8AIN740TEYVm_qaAODmkUIB-1qJYtqG6i4c" class="card-img-top" style="height:20em;" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Royal Drive</h5>
+                      <p class="card-text">Administrative professional</p>
+                      
+                    </div>
+                </div>
+                </a>
+            </div>
+            
+            <div class="col-md-6">
+                <a href="https://www.royaldrive.in/" style="text-decoration: none;">
+                    <div class="card text-center p-3"  style="width: 75%;">
+                        <img src="https://media-exp3.licdn.com/dms/image/C510BAQFXao52ZRExeg/company-logo_200_200/0/1558348177492?e=1634774400&v=beta&t=C-TTEyeQ8AIN740TEYVm_qaAODmkUIB-1qJYtqG6i4c" class="card-img-top" style="height: 20em;" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Royal Drive</h5>
+                          <p class="card-text">Receptionist</p>
+                          
+                        </div>
+                    </div>
+                </a>
+            </div>            
+                        
+            
+        </div>
+    </div>
+    
+</section>
+<section class="bg-dark" id="Gallery-section">
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h1 class="text-center">Gallery</h1>
+        <div class="full-img" id="fullImgBox">
+            <img src="img12.jpg" id="fullImg">
+            <span onclick="closeFullImg()">x</span>
+        </div>
+        <div class="img-gallery">
+            
+            <img src="img12.jpg" onclick="openFullImg(this.src)">
+            <img src="img7.png" onclick="openFullImg(this.src)">
+            <img src="img2.png" onclick="openFullImg(this.src)">
+            <img src="img3.png" onclick="openFullImg(this.src)">
+            <img src="img4.jpg" onclick="openFullImg(this.src)">
+            <img src="img6.png" onclick="openFullImg(this.src)">
+            
+        </div>
+        <br>
+        <br>
+
+    </div>
+</section>
+<section class="p-5 bg-light" id="contact-section">
+    <br>
+    <div class="container">
+        <h1 class="text-center">Contact me</h1>
+        <div class="row">
+            <div class="col-md-12">
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Name</label>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Place</label>
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="Place">
+                  </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Phone Number</label>
+                      <input type="tel" class="form-control" id="inputPassword4" placeholder="Phone Number">
+                    </div>
+                  </div>
+        
+                <div class="form-group">
+                  <label for="inputAddress2">Message</label>
+                  <textarea class="form-control" cols="30" rows="10" placeholder="Type your message here..."></textarea>
+                </div>
+                
+                <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary" >Submit</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+<footer class="bg-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center text-white">
+                <a href="https://www.facebook.com/nimitha.kbabu/" class="fa fa-facebook"></a>
+                <a href="https://www.linkedin.com/in/nimitha-k/" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/nimithakbabu/" class="fa fa-instagram"></a>
+                <p>Copyrights</p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<script>
+    var fullImgBox=document.getElementById("fullImgBox");
+    var fullImg=document.getElementById("fullImg");
+
+    function openFullImg(pic) {
+      fullImgBox.style.display = "flex";
+      fullImg.src = pic;
+      
+    }
+    function closeFullImg() {
+      fullImgBox.style.display = "none";
+      
+    }
+    
+  </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/be7efd1e4e.js" crossorigin="anonymous"></script>
+</body>
+</html>
